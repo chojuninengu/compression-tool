@@ -1,9 +1,8 @@
 # Rust
 /target/
 **/*.rs.bk
-Cargo.lock
 
-# JavaScript
+# Node.js
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -17,12 +16,4 @@ yarn-error.log*
 
 # OS
 .DS_Store
-Thumbs.db
-
-# Test files
-test_files/
-*.cmp
-*.dec
-
-# Logs
-*.log 
+Thumbs.db 

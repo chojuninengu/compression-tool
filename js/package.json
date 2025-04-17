@@ -1,0 +1,16 @@
+{
+  "name": "js-compressor",
+  "version": "1.0.0",
+  "description": "A compression tool implementing RLE and LZ77 algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.test.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+} 

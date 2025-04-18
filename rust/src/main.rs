@@ -1,13 +1,13 @@
+use anyhow::Result;
 use std::env;
 use std::fs::File;
 use std::io::{self, Read, Write};
-use std::path::Path;
 use std::process;
 
 mod lz;
 mod rle;
 
-fn main() -> io::Result<()> {
+fn main() -> Result<()> {
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 4 {

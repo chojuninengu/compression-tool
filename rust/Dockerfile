@@ -7,6 +7,6 @@ RUN rm -f Cargo.lock && cargo build --release
 
 FROM debian:bookworm-slim
 
-COPY --from=builder /usr/src/app/target/release/rust-compressor /usr/local/bin/compressor
+COPY --from=builder /usr/src/app/target/release/compression-tool /usr/local/bin/compressor
 
 ENTRYPOINT ["compressor"] 

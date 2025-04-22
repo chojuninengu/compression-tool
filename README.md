@@ -16,7 +16,7 @@ A command-line tool that implements two compression algorithms: Run-Length Encod
 ```
 compression-tool/
 ├── js/                 # JavaScript implementation
-│   ├── src/           # Source code
+│   ├── src/           # Source code 
 │   ├── test/          # Test files
 │   ├── Dockerfile     # Docker configuration
 │   └── package.json   # Dependencies

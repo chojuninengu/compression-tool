@@ -33,8 +33,8 @@ jobs:
       - name: Build and push JS Compressor
         uses: docker/build-push-action@v5
         with:
-          context: ./compression-tool/js
-          file: ./compression-tool/js/Dockerfile
+          context: ./js
+          file: ./js/Dockerfile
           push: ${{ github.event_name == 'push' }}
           tags: ghcr.io/chojuninengu/compression-tool-js:latest
           cache-from: type=gha
@@ -71,8 +71,8 @@ jobs:
       - name: Build and push Rust Compressor
         uses: docker/build-push-action@v5
         with:
-          context: ./compression-tool/rust
-          file: ./compression-tool/rust/Dockerfile
+          context: ./rust
+          file: ./rust/Dockerfile
           push: ${{ github.event_name == 'push' }}
           tags: ghcr.io/chojuninengu/compression-tool-rs:latest
           cache-from: type=gha
